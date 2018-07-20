@@ -1,0 +1,4 @@
+welcome to B86 batch
+finding a size of a file without using command and loops
+hello world
+ee sala cup namde

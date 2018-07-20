@@ -1,0 +1,14 @@
+#include<stdio.h>
+#pragma pack(4)
+struct tag{
+    char a;
+    char b;
+    int c;
+    char d;
+};
+
+int main()
+{
+    printf("%d\n",sizeof(struct tag));
+    return 0;
+}

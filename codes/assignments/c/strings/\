@@ -1,0 +1,52 @@
+#include<stdio.h>
+
+int str_cmp(char *str1,char *str2);
+int main()
+{
+    char str1[100];
+    char str2[100];
+    int res;
+    
+    printf("enter two strings\n");
+    fgets(str1,50,stdin);
+    fgets(str2,50,stdin);
+    res=str_cmp(str1,str2);
+    if(res==1)
+    {
+        printf("str1 is greater than str2\n");
+    }    
+    else if(res==-1)
+    {
+        printf("str1 is lesser than str2\n");
+    }    
+    else
+    {
+        printf("both strings are equal\n");    
+    }
+}
+int str_cmp(char *str1,char *str2)
+{
+    int i=0;
+
+    while(*(str+i)!='\0')
+    {
+        if((*(str1+i)>=65 && *(str1+i)<=92))
+        {
+            *(str1+i)=*(str1+i)+32;
+        }
+        i++;
+    }
+    i=0;
+    while(*(str2+i)!='\0')
+             {
+                   if((*(str2+i)>=65 && *(str2+i)<=92))  
+                   { 
+                        *(str2+i)=*(str2+i)+32;
+                    }
+                   i++;
+             }
+}
+
+
+
+

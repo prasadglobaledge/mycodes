@@ -1,0 +1,40 @@
+#include<stdio.h>
+#include<stdlib.h>
+//#define MAX 100
+
+int main()
+{
+   // char *str = NULL;
+    FILE *fp = NULL;
+    char ch;
+
+    /*str = (char *) malloc(SIZE * sizeof(char));
+    if(str == NULL)
+        {
+            printf("MA failed\n");
+            exit(1);
+        }*/
+    fp = fopen("data","r");
+    if(fp == NULL)
+    {
+        printf("file not opened\n");
+        exit(1);
+    }
+    while(*fp != EOF)
+    {
+        ch = fgetc(fp);
+        if(ch == 65 <= ch==92)
+        {
+            ch = ch + 32;
+            fseek(fp, -1, SEEK_CUR);
+            fputc(ch, fp);
+        }
+        else
+        {
+            ch = ch - 32;
+            fseek(fp, -1, SEEK_CUR);
+            fputc(ch, fp);
+        }
+    }
+    fclose(fp);
+}

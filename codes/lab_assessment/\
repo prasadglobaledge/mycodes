@@ -1,0 +1,27 @@
+#include<stdio.h>
+#include<stdlib.h>
+int file_size(FILE *fp, int count);
+int main()
+{
+    FILE *fp = NULL;
+    long int count = 0;
+    int res;
+
+    fp = fopen("file1.txt", "r");
+    if(fp == NULL)
+    {
+        printf("file not opened\n");
+        exit(1);
+    }
+    res = file_size(fp, count);
+    printf("the size of the file is : %d bytes\n",res);
+    return 0;
+
+}
+int file_size(FILE *fp,long int count)
+{
+    fseek(fp, 0, SEEK_END);
+    count = ftell(fp);
+    
+    return count;
+}

@@ -1,0 +1,20 @@
+
+;; Function main (null)
+;; enabled by -tree-original
+
+
+{
+  typedef struct head struct struct head;
+  int a;
+
+    int a;
+}
+
+
+;; Function he (null)
+;; enabled by -tree-original
+
+{
+  
+}
+

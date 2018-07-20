@@ -1,0 +1,1 @@
+cmd_/home/prasad/training/assignments/driver/kmod.ko := ld -r -m elf_i386 -T ../scripts/module-common.lds --build-id  -o /home/prasad/training/assignments/driver/kmod.ko /home/prasad/training/assignments/driver/kmod.o /home/prasad/training/assignments/driver/kmod.mod.o ;  true

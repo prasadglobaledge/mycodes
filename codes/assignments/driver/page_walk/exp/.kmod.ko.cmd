@@ -1,0 +1,1 @@
+cmd_/home/prasad/training/assignments/driver/page_walk/exp/kmod.ko := ld -r -m elf_i386 -T ../scripts/module-common.lds --build-id  -o /home/prasad/training/assignments/driver/page_walk/exp/kmod.ko /home/prasad/training/assignments/driver/page_walk/exp/kmod.o /home/prasad/training/assignments/driver/page_walk/exp/kmod.mod.o ;  true

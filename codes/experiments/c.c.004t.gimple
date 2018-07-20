@@ -1,0 +1,19 @@
+main ()
+{
+  int D.1829;
+  int D.1830;
+  int a;
+  int b;
+  int c;
+
+  a = 10;
+  b = 12;
+  c = 0;
+  D.1829 = printf ("hello\n");
+  c = D.1829 + a;
+  printf ("%d\n", c);
+  D.1830 = 0;
+  return D.1830;
+}
+
+

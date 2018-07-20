@@ -1,0 +1,25 @@
+#include "header.h"
+
+void *thread1 (void *p);
+void *thread2 (void *p);
+void *thread3 (void *p);
+void *thread4 (void *p);
+
+int a = 1;
+pthread_mutex_t mutex;
+pthread_cond_t cond;
+
+int main (void) 
+{
+    pthread_t th1;
+    pthread_t th2;
+    pthread_t th3;
+    pthread_t th4;
+    int status1;
+    int status2;
+    int status3;
+    int status4;
+
+    pthread_mutex_init(&mutex, NULL);
+
+}
